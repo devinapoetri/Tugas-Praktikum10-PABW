@@ -19,7 +19,7 @@ export default function Create() {
     // Submit form
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
-        router.post('/biodata', form as any);
+        router.post('/biodata', form as Record<string, any>);
     };
 
     return (
